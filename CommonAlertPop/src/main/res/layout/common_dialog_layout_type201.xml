@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 有标题，标题有背景，有文本内容，两个按钮 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/common_dialog_root_bg_layout_style">
+
+    <LinearLayout
+        style="@style/common_dialog_root_layout_style"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/common_dialog_title_root"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_dialog_title_root_height"
+            android:background="@drawable/common_dialog_title_safe_blue_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/common_dialog_title_logo"
+                    style="@style/common_dialog_title_logo_style" />
+
+                <TextView
+                    android:id="@+id/common_dialog_title_text"
+                    style="@style/common_dialog_title_normal_white_style"
+                    tools:text="对话框标题" />
+            </LinearLayout>
+
+            <View
+                style="@style/common_dialog_title_bottom_shadow_divider_style"
+                android:layout_gravity="bottom" />
+        </FrameLayout>
+
+        <!-- 这里比较特殊，内容部分使用了标题的样式，当做标题使用 -->
+        <TextView
+            android:id="@+id/common_dialog_content_text"
+            style="@style/common_dialog_title_normal_black_style"
+            android:layout_marginBottom="@dimen/common_dialog_title_bottom_large_space"
+            tools:text="对话框内容" />
+
+        <View style="@style/common_dialog_btn_top_divider_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/common_dialog_cancel_btn"
+                style="@style/common_dialog_cancel_small_btn_style"
+                tools:text="取消" />
+
+            <View
+                android:id="@+id/common_dialog_btn_middle_divider"
+                style="@style/common_dialog_btn_vertical_divider_style"/>
+
+            <TextView
+                android:id="@+id/common_dialog_ok_btn"
+                style="@style/common_dialog_ok_small_btn_style"
+                tools:text="确定" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

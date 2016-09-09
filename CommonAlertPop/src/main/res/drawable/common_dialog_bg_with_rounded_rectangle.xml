@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 圆角 -->
+    <corners
+        android:bottomLeftRadius="@dimen/common_dialog_btn_corners_radius"
+        android:bottomRightRadius="@dimen/common_dialog_btn_corners_radius"
+        android:topLeftRadius="@dimen/common_dialog_btn_corners_radius"
+        android:topRightRadius="@dimen/common_dialog_btn_corners_radius"/><!-- 设置圆角半径，可以分别设置4个角 -->
+
+    <!-- 填充 -->
+    <solid android:color="@android:color/white" /><!-- 填充的颜色 -->
+
+</shape>

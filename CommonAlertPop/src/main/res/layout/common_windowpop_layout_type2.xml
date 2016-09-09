@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 有标题，标题有背景，有内容，两个按钮 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77000000"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <include layout="@layout/common_dialog_layout_type202" />
+</FrameLayout>

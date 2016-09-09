@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- common dialog -->
+    <color name="common_dialog_text_normal_black">#ff535353</color>
+    <color name="common_dialog_text_light_black">#ff959595</color>
+    <color name="common_dialog_text_danger_red">#ffe4363a</color>
+    <color name="common_dialog_text_blue">#ff489eff</color>
+    <color name="common_dialog_btn_normal_bg_blue">#ff489eff</color>
+    <color name="common_dialog_btn_press_bg_color1">#fffafafa</color>
+    <color name="common_dialog_btn_press_bg_color2">#ff3b8ae3</color>
+    <color name="common_dialog_title_bg_safe_blue">#ff0d7dfa</color>
+    <color name="common_dialog_title_bg_risk_yellow">#fffe8213</color>
+    <color name="common_dialog_title_bg_danger_red">#ffff543d</color>
+    <color name="common_dialog_btn_top_divider_color">#ffe5e5e5</color>
+    <color name="common_dialog_title_bottom_shadow_divider_color">#0c000000</color>
+</resources>

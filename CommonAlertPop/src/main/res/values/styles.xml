@@ -1,0 +1,161 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Light">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- 对话框样式 -->
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+    </style>
+
+    <!-- 对话框外层布局属性 -->
+    <style name="common_dialog_root_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/common_dialog_bg_with_rounded_rectangle</item>
+    </style>
+
+    <!-- 对话框外层背景布局属性 -->
+    <style name="common_dialog_root_bg_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/common_dialog_bg</item>
+    </style>
+
+    <!-- 对话框取消大号按钮样式，左下角，右下角有圆角 -->
+    <style name="common_dialog_cancel_large_btn_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_dialog_btn_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/common_dialog_btn_textSize</item>
+        <item name="android:textColor">@color/common_dialog_text_light_black</item>
+        <item name="android:background">@drawable/common_dialog_cancel_large_btn_selector</item>
+    </style>
+
+    <!-- 对话框取消小号按钮样式，左下角有圆角 -->
+    <style name="common_dialog_cancel_small_btn_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/common_dialog_btn_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/common_dialog_btn_textSize</item>
+        <item name="android:textColor">@color/common_dialog_text_light_black</item>
+        <item name="android:background">@drawable/common_dialog_cancel_small_btn_selector</item>
+    </style>
+
+    <!-- 对话框确定大号按钮样式，左下角，右下角有圆角 -->
+    <style name="common_dialog_ok_large_btn_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_dialog_btn_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/common_dialog_btn_textSize</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/common_dialog_ok_large_btn_selector</item>
+    </style>
+
+    <!-- 对话框确定小号按钮样式，右下角有圆角 -->
+    <style name="common_dialog_ok_small_btn_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/common_dialog_btn_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/common_dialog_btn_textSize</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/common_dialog_ok_small_btn_selector</item>
+    </style>
+
+    <!-- 对话框标题正常黑文本样式 -->
+    <style name="common_dialog_title_normal_black_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/common_dialog_left_right_space</item>
+        <item name="android:layout_marginRight">@dimen/common_dialog_left_right_space</item>
+        <item name="android:layout_marginTop">@dimen/common_dialog_title_top_space</item>
+        <item name="android:textSize">@dimen/common_dialog_title_textSize</item>
+        <item name="android:textColor">@color/common_dialog_text_normal_black</item>
+    </style>
+
+    <!-- 对话框带背景的标题正常白文本样式 -->
+    <style name="common_dialog_title_normal_white_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_dialog_title_textSize</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- 对话框标题警示危险文本样式 -->
+    <style name="common_dialog_title_danger_red_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/common_dialog_left_right_space</item>
+        <item name="android:layout_marginRight">@dimen/common_dialog_left_right_space</item>
+        <item name="android:textSize">@dimen/common_dialog_title_textSize</item>
+        <item name="android:textColor">@color/common_dialog_text_danger_red</item>
+    </style>
+
+    <!-- 对话框带背景的标题的logo样式 -->
+    <style name="common_dialog_title_logo_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/common_dialog_title_logo_right_space</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/common_dialog_title_logo</item>
+    </style>
+
+    <!-- 对话框内容布局容器样式 -->
+    <style name="common_dialog_content_container_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/common_dialog_left_right_space</item>
+        <item name="android:layout_marginRight">@dimen/common_dialog_left_right_space</item>
+    </style>
+
+    <!-- 对话框内容区域文本样式 -->
+    <style name="common_dialog_content_light_black_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/common_dialog_left_right_space</item>
+        <item name="android:layout_marginRight">@dimen/common_dialog_left_right_space</item>
+        <item name="android:layout_marginBottom">@dimen/common_dialog_content_bottom_space</item>
+        <item name="android:textSize">@dimen/common_dialog_content_textSize</item>
+        <item name="android:textColor">@color/common_dialog_text_light_black</item>
+    </style>
+
+    <!-- 对话框确定取消按钮顶部分割线样式 -->
+    <style name="common_dialog_btn_top_divider_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_dialog_btn_top_divider_height</item>
+        <item name="android:background">@color/common_dialog_btn_top_divider_color</item>
+    </style>
+
+    <!-- 对话框标题背景下面投影分割线样式 -->
+    <style name="common_dialog_title_bottom_shadow_divider_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_dialog_title_bottom_shadow_divider_height</item>
+        <item name="android:background">@color/common_dialog_title_bottom_shadow_divider_color</item>
+    </style>
+
+    <!-- 对话框确定取消按钮中间分割线样式 -->
+    <style name="common_dialog_btn_vertical_divider_style">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:background">@color/common_dialog_btn_top_divider_color</item>
+    </style>
+</resources>

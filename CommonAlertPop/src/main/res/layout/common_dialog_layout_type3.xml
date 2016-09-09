@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 仅有标题（标题前有进度条），无内容，一个取消按钮   -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/common_dialog_root_bg_layout_style">
+
+    <LinearLayout
+        style="@style/common_dialog_root_layout_style"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_dialog_left_right_space"
+            android:orientation="horizontal">
+
+            <com.common.controls.widget.ProgressWheel
+                xmlns:wheel="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/common_dialog_title_progress"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                wheel:barColor="#0ea9f2"
+                wheel:progressIndeterminate="true"
+                wheel:rimColor="#d8d8d8"/>
+
+            <TextView
+                android:id="@+id/common_dialog_title_text"
+                style="@style/common_dialog_title_normal_black_style"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="@dimen/common_dialog_title_bottom_large_space"
+                tools:text="对话框标题" />
+
+        </LinearLayout>
+
+        <View style="@style/common_dialog_btn_top_divider_style" />
+
+        <TextView
+            android:id="@+id/common_dialog_cancel_btn"
+            style="@style/common_dialog_cancel_large_btn_style"
+            tools:text="取消" />
+    </LinearLayout>
+</FrameLayout>

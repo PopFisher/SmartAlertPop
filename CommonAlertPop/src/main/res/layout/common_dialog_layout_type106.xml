@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 有标题，有文本内容，一个确定按钮   -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/common_dialog_root_bg_layout_style">
+
+    <LinearLayout
+        style="@style/common_dialog_root_layout_style"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/common_dialog_title_text"
+            style="@style/common_dialog_title_normal_black_style"
+            android:layout_marginBottom="@dimen/common_dialog_title_bottom_small_space"
+            tools:text="对话框标题" />
+
+        <TextView
+            android:id="@+id/common_dialog_content_text"
+            style="@style/common_dialog_content_light_black_style"
+            tools:text="对话框文本内容区域" />
+
+        <View style="@style/common_dialog_btn_top_divider_style" />
+
+        <TextView
+            android:id="@+id/common_dialog_cancel_btn"
+            style="@style/common_dialog_cancel_large_btn_style"
+            tools:text="取消" />
+    </LinearLayout>
+</FrameLayout>

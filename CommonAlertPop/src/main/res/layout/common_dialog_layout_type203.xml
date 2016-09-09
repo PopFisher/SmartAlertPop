@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 有标题，标题有背景，有自定义内容，一个确定按钮 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/common_dialog_root_bg_layout_style">
+
+    <LinearLayout
+        style="@style/common_dialog_root_layout_style"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/common_dialog_title_root"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_dialog_title_root_height"
+            android:background="@drawable/common_dialog_title_safe_blue_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/common_dialog_title_logo"
+                    style="@style/common_dialog_title_logo_style" />
+
+                <TextView
+                    android:id="@+id/common_dialog_title_text"
+                    style="@style/common_dialog_title_normal_white_style"
+                    tools:text="对话框标题" />
+            </LinearLayout>
+
+            <View
+                style="@style/common_dialog_title_bottom_shadow_divider_style"
+                android:layout_gravity="bottom" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/common_dialog_content_container"
+            style="@style/common_dialog_content_container_style">
+
+        </FrameLayout>
+
+        <View style="@style/common_dialog_btn_top_divider_style" />
+
+        <TextView
+            android:id="@+id/common_dialog_ok_btn"
+            style="@style/common_dialog_ok_large_btn_style"
+            tools:text="确定" />
+    </LinearLayout>
+</FrameLayout>
