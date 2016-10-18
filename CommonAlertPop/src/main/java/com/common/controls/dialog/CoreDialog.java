@@ -13,7 +13,7 @@ import android.view.WindowManager;
 public class CoreDialog extends Dialog {
 	private Window mWindow = null;
 	private View mView = null;
-	private boolean mIsDismiss = true;
+	private boolean isTouchToDismiss = true;
 	private Context mContext = null;
     private boolean mNonActivityLevelDialog = false;
 	private int mDialogHeight;
@@ -43,7 +43,7 @@ public class CoreDialog extends Dialog {
 		mView = view;
 		mWindow = getWindow();
 		mContext = context;
-		mIsDismiss = isDismiss;
+		isTouchToDismiss = isDismiss;
 	}
 
 	@Override
@@ -62,7 +62,7 @@ public class CoreDialog extends Dialog {
 		} catch (Exception e) {
 
 		}
-		if (!mIsDismiss) {
+		if (!isTouchToDismiss) {
 			setCanceledOnTouchOutside(false);
 		}
 	}
@@ -132,15 +132,4 @@ public class CoreDialog extends Dialog {
 			return false;
 		}
 	}
-
-    public void setWindowType(int windowType) {
-		if (windowType == WindowManager.LayoutParams.TYPE_PHONE
-				|| windowType == WindowManager.LayoutParams.TYPE_SYSTEM_ALERT
-				|| windowType == WindowManager.LayoutParams.TYPE_TOAST) {
-			mNonActivityLevelDialog = true;
-        } else {
-            mNonActivityLevelDialog = false;
-        }
-        mWindow.setType(windowType);
-    }
 }

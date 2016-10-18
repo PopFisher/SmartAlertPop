@@ -14,36 +14,101 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
             android:gravity="center"
-            android:text="弹窗测试Demo" />
+            android:text="Dialog弹窗测试Demo"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/alert_pop_type1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left|center_vertical"
-            android:text="Type1:仅有标题，无内容，两个按钮"/>
+            android:text="Type1:仅有标题，无内容，两个按钮" />
 
         <Button
             android:id="@+id/alert_pop_type2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left|center_vertical"
-            android:text="Type2:仅有标题，无内容，一个取消按钮"/>
+            android:text="Type2:仅有标题，无内容，一个取消按钮" />
 
         <Button
             android:id="@+id/alert_pop_type3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left|center_vertical"
-            android:text="Type3:仅有标题（标题前有进度条），无内容，一个取消按钮"/>
+            android:text="Type3:仅有标题（标题前有进度条），无内容，一个取消按钮" />
 
         <Button
             android:id="@+id/alert_pop_type4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left|center_vertical"
-            android:text="Type4:仅有标题，无内容，一个确定按钮"/>
+            android:text="Type4:仅有标题，无内容，一个确定按钮" />
+
+        <Button
+            android:id="@+id/alert_pop_type101"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="Type101:有标题，有文本内容，一个确定按钮" />
+
+        <Button
+            android:id="@+id/alert_pop_type102"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="Type102:有标题，有自定义布局内容，一个确定按钮" />
+
+        <Button
+            android:id="@+id/alert_pop_type103"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="Type103:有标题，有文本内容，两个按钮" />
+
+        <Button
+            android:id="@+id/alert_pop_type104"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="Type104:有标题，有自定义布局内容，两个按钮" />
+
+        <Button
+            android:id="@+id/alert_pop_type105"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="Type105:有标题，有自定义布局内容，一个取消按钮" />
+
+        <Button
+            android:id="@+id/alert_pop_type106"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="Type106:有标题，有文本内容，一个确定按钮" />
+
+        <Button
+            android:id="@+id/alert_pop_type201"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="Type201:有标题，标题有背景，有文本内容，两个按钮" />
+
+        <Button
+            android:id="@+id/alert_pop_type202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="Type202:有标题，标题有背景，有自定义布局内容，两个按钮" />
+
+        <Button
+            android:id="@+id/alert_pop_type203"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="Type203:有标题，标题有背景，有自定义布局内容，一个确定按钮" />
 
     </LinearLayout>
 

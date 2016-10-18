@@ -28,13 +28,15 @@ public class DialogType2 extends DialogBase {
     }
 
     @Override
-    public void setCancelBtnText(int textId) {
+    public void setCancelBtn(int textId, View.OnClickListener cancelOnClickListener) {
         mCancelTv.setText(textId);
+        setOnCancelClickListener(cancelOnClickListener);
     }
 
     @Override
-    public void setCancelBtnText(CharSequence text) {
+    public void setCancelBtn(CharSequence text, View.OnClickListener cancelOnClickListener) {
         mCancelTv.setText(text);
+        setOnCancelClickListener(cancelOnClickListener);
     }
 
     @Override

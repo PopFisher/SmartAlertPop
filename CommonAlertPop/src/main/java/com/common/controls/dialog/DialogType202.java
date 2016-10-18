@@ -11,7 +11,7 @@ import com.common.alertpop.R;
 
 /**
  * 类型202 Dialog
- * 有标题，有自定义布局内容，两个按钮
+ * 有标题，标题有背景，有自定义布局内容，两个按钮
  */
 
 public class DialogType202 extends DialogBase {
@@ -58,23 +58,27 @@ public class DialogType202 extends DialogBase {
     }
 
     @Override
-    public void setCancelBtnText(int textId) {
+    public void setCancelBtn(int textId, View.OnClickListener cancelOnClickListener) {
         mCancelTv.setText(textId);
+        setOnCancelClickListener(cancelOnClickListener);
     }
 
     @Override
-    public void setCancelBtnText(CharSequence text) {
+    public void setCancelBtn(CharSequence text, View.OnClickListener cancelOnClickListener) {
         mCancelTv.setText(text);
+        setOnCancelClickListener(cancelOnClickListener);
     }
 
     @Override
-    public void setOkBtnText(int textId) {
+    public void setOkBtn(int textId, View.OnClickListener okOnClickListener) {
         mOkTv.setText(textId);
+        setOnOkClickListener(okOnClickListener);
     }
 
     @Override
-    public void setOkBtnText(CharSequence text) {
+    public void setOkBtn(CharSequence text, View.OnClickListener okOnClickListener) {
         mOkTv.setText(text);
+        setOnOkClickListener(okOnClickListener);
     }
 
     @Override

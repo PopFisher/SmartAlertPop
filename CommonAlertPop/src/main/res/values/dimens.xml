@@ -16,7 +16,7 @@
     <dimen name="common_dialog_btn_height">40dp</dimen>
     <dimen name="common_dialog_btn_textSize">16dp</dimen>
     <dimen name="common_dialog_title_textSize">16dp</dimen>
-    <dimen name="common_dialog_content_textSize">13dp</dimen>
+    <dimen name="common_dialog_content_textSize">14dp</dimen>
     <dimen name="common_dialog_btn_corners_radius">2dp</dimen>
     <dimen name="common_dialog_btn_top_divider_height">1px</dimen>
     <dimen name="common_dialog_title_bottom_shadow_divider_height">5px</dimen>

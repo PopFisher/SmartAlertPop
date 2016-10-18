@@ -217,23 +217,21 @@ public abstract class WindowPopBase implements ICommonWindowPop {
     public void clearContentMargin() { }
 
     @Override
-    public void setCancelBtnText(int textId) { }
+    public void setCancelBtn(int textId, View.OnClickListener cancelOnClickListener) { }
 
     @Override
-    public void setCancelBtnText(CharSequence text) { }
+    public void setCancelBtn(CharSequence text, View.OnClickListener cancelOnClickListener) { }
 
     @Override
-    public void setOkBtnText(int textId) { }
+    public void setOkBtn(int textId, View.OnClickListener okOnClickListener) { }
 
     @Override
-    public void setOkBtnText(CharSequence text) { }
+    public void setOkBtn(CharSequence text, View.OnClickListener okOnClickListener) { }
 
-    @Override
     public void setOnCancelClickListener(View.OnClickListener cancelClickListener) {
         mCancelOnClickListener = cancelClickListener;
     }
 
-    @Override
     public void setOnOkClickListener(View.OnClickListener okClickListener) {
         mOkOnClickListener = okClickListener;
     }

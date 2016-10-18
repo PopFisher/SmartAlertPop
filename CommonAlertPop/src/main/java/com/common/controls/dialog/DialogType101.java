@@ -40,13 +40,15 @@ public class DialogType101 extends DialogBase {
     }
 
     @Override
-    public void setOkBtnText(int textId) {
+    public void setOkBtn(int textId, View.OnClickListener okOnClickListener) {
         mOkTv.setText(textId);
+        setOnOkClickListener(okOnClickListener);
     }
 
     @Override
-    public void setOkBtnText(CharSequence text) {
+    public void setOkBtn(CharSequence text, View.OnClickListener okOnClickListener) {
         mOkTv.setText(text);
+        setOnOkClickListener(okOnClickListener);
     }
 
     @Override

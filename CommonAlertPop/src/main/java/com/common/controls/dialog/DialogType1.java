@@ -32,30 +32,35 @@ public class DialogType1 extends DialogBase {
     }
 
     @Override
-    public void setCancelBtnText(int textId) {
+    public void setCancelBtn(int textId, View.OnClickListener cancelOnClickListener) {
         mCancelTv.setText(textId);
+        setOnCancelClickListener(cancelOnClickListener);
     }
 
     @Override
-    public void setCancelBtnText(CharSequence text) {
+    public void setCancelBtn(CharSequence text, View.OnClickListener cancelOnClickListener) {
         mCancelTv.setText(text);
+        setOnCancelClickListener(cancelOnClickListener);
     }
 
     @Override
-    public void setOkBtnText(int textId) {
+    public void setOkBtn(int textId, View.OnClickListener okOnClickListener) {
         mOkTv.setText(textId);
+        setOnOkClickListener(okOnClickListener);
     }
+
+    @Override
+    public void setOkBtn(CharSequence text, View.OnClickListener okOnClickListener) {
+        mOkTv.setText(text);
+        setOnOkClickListener(okOnClickListener);
+    }
+
 
     @Override
     public void setOkBtnStyleType(int okBtnStyleType) {
         mOkTv.setBackgroundResource(DialogUtil.getOkBtnBgResId(okBtnStyleType));
         mOkTv.setTextColor(DialogUtil.getOkBtnTextColorValue(okBtnStyleType, mOkTv.getContext()));
         mMiddleDivider.setVisibility(DialogUtil.isBtnMiddleDividerVisible(okBtnStyleType) ? View.VISIBLE : View.GONE);
-    }
-
-    @Override
-    public void setOkBtnText(CharSequence text) {
-        mOkTv.setText(text);
     }
 
     @Override
