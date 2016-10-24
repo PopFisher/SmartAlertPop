@@ -8,11 +8,11 @@ import android.widget.Button;
 import com.common.controls.dialog.CommonDialogFactory;
 import com.common.controls.dialog.DialogUtil;
 import com.common.controls.dialog.ICommonDialog;
+import com.common.controls.window.CommonWindowPopFactory;
 import com.common.controls.window.ICommonWindowPop;
+import com.common.controls.window.WindowPopUtil;
 
 public class AlertPopTestMainActivity extends Activity implements View.OnClickListener {
-
-    private Button mButton1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,13 +31,15 @@ public class AlertPopTestMainActivity extends Activity implements View.OnClickLi
         findViewById(R.id.alert_pop_type201).setOnClickListener(this);
         findViewById(R.id.alert_pop_type202).setOnClickListener(this);
         findViewById(R.id.alert_pop_type203).setOnClickListener(this);
+        findViewById(R.id.alert_window_pop_type1).setOnClickListener(this);
+        findViewById(R.id.alert_window_pop_type2).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        mButton1 = (Button) findViewById(R.id.alert_pop_type1);
         final int id = v.getId();
         final ICommonDialog dialog;
+        final ICommonWindowPop windowPop;
         switch (id) {
             case R.id.alert_pop_type1:
                 dialog = CommonDialogFactory.createDialogByType(this, DialogUtil.DIALOG_TYPE_1);
@@ -223,6 +225,45 @@ public class AlertPopTestMainActivity extends Activity implements View.OnClickLi
                     }
                 });
                 dialog.show();
+                break;
+            case R.id.alert_window_pop_type1:
+                windowPop = CommonWindowPopFactory.createWindowPopByType(this, WindowPopUtil.WINDOW_POP_TYPE_1);
+                windowPop.setTitleBgType(WindowPopUtil.TITLE_DANGER_RED);
+                windowPop.setTitleText("WINDOW_POP_TYPE_1");
+                windowPop.setContentText(R.string.window_pop_content);
+                windowPop.setCancelBtn(R.string.cancel, new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                });
+                windowPop.setOkBtn(R.string.ok, new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        windowPop.dismiss();
+                    }
+                });
+                windowPop.show();
+                break;
+            case R.id.alert_window_pop_type2:
+                windowPop = CommonWindowPopFactory.createWindowPopByType(this, WindowPopUtil.WINDOW_POP_TYPE_2);
+                windowPop.setTitleBgType(WindowPopUtil.TITLE_SAFE_BLUE);
+                windowPop.setTitleText("WINDOW_POP_TYPE_2");
+                windowPop.setContentView(R.layout.dialog_custom_content_test_layout);
+                windowPop.setCanceledOnTouchOutside(true);
+                windowPop.setCancelBtn(R.string.cancel, new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                });
+                windowPop.setOkBtn(R.string.ok, new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        windowPop.dismiss();
+                    }
+                });
+                windowPop.show();
                 break;
             default:
                 break;

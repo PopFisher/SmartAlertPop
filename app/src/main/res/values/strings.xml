@@ -3,4 +3,5 @@
     <string name="ok">确定</string>
     <string name="cancel">取消</string>
     <string name="dialog_content">这里是对话框的文本内容</string>
+    <string name="window_pop_content">这里是WindowManager弹窗的文本内容</string>
 </resources>

@@ -101,7 +101,7 @@ public class DialogUtil {
                 bgResId = R.drawable.common_dialog_ok_large_btn_selector;
                 break;
             case OK_BTN_SMALL_BLUE_BG_WHITE_TEXT:
-                bgResId = R.drawable.common_dialog_ok_small_btn_selector;
+                bgResId = R.drawable.common_dialog_ok_small_btn_blue_selector;
                 break;
             case OK_BTN_LARGE_WHITE_BG_BLUE_TEXT:
                 bgResId = R.drawable.common_dialog_ok_large_btn_white_selector;
@@ -110,7 +110,7 @@ public class DialogUtil {
                 bgResId = R.drawable.common_dialog_ok_small_btn_white_selector;
                 break;
             default:
-                bgResId = R.drawable.common_dialog_ok_small_btn_selector;
+                bgResId = R.drawable.common_dialog_ok_small_btn_blue_selector;
                 break;
         }
         return bgResId;

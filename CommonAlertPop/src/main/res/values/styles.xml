@@ -68,6 +68,16 @@
         <item name="android:background">@drawable/common_dialog_ok_large_btn_selector</item>
     </style>
 
+    <!-- 对话框确定大号按钮样式，左下角，右下角有圆角，背景白色字体黑色 -->
+    <style name="common_dialog_ok_large_btn_style_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_dialog_btn_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/common_dialog_btn_textSize</item>
+        <item name="android:textColor">@color/common_dialog_text_light_black</item>
+        <item name="android:background">@drawable/common_dialog_ok_large_btn_white_selector</item>
+    </style>
+
     <!-- 对话框确定小号按钮样式，右下角有圆角 -->
     <style name="common_dialog_ok_small_btn_style">
         <item name="android:layout_width">0dp</item>
@@ -76,7 +86,18 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/common_dialog_btn_textSize</item>
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:background">@drawable/common_dialog_ok_small_btn_selector</item>
+        <item name="android:background">@drawable/common_dialog_ok_small_btn_blue_selector</item>
+    </style>
+
+    <!-- 对话框确定小号按钮样式，右下角有圆角，背景白色字体黑色 -->
+    <style name="common_dialog_ok_small_btn_style_white_bg">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/common_dialog_btn_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/common_dialog_btn_textSize</item>
+        <item name="android:textColor">@color/common_dialog_text_light_black</item>
+        <item name="android:background">@drawable/common_dialog_ok_small_btn_white_selector</item>
     </style>
 
     <!-- 对话框标题正常黑文本样式 -->
@@ -110,8 +131,8 @@
 
     <!-- 对话框带背景的标题的logo样式 -->
     <style name="common_dialog_title_logo_style">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">@dimen/common_dialog_title_logo_width</item>
+        <item name="android:layout_height">@dimen/common_dialog_title_logo_width</item>
         <item name="android:layout_marginRight">@dimen/common_dialog_title_logo_right_space</item>
         <item name="android:gravity">center</item>
         <item name="android:background">@drawable/common_dialog_title_logo</item>

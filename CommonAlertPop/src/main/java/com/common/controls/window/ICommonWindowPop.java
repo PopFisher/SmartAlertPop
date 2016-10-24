@@ -24,5 +24,5 @@ public interface ICommonWindowPop {
     void setCanceledOnTouchOutside(boolean canceledOnTouchOutside);
     boolean isShow();
     void show();
-    void remove();
+    void dismiss();
 }

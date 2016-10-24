@@ -74,7 +74,7 @@ public abstract class WindowPopBase implements ICommonWindowPop {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN && isCanceledOnTouchOutside) {
-                    remove();
+                    dismiss();
                     return true;
                 }
                 return false;
@@ -84,7 +84,7 @@ public abstract class WindowPopBase implements ICommonWindowPop {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 if ((keyCode == KeyEvent.KEYCODE_MENU || keyCode == KeyEvent.KEYCODE_BACK) && event.getAction() == KeyEvent.ACTION_DOWN) {
-                    remove();
+                    dismiss();
                     return true;
                 }
                 return false;
@@ -99,7 +99,7 @@ public abstract class WindowPopBase implements ICommonWindowPop {
     }
 
     public void onCancelClick(View v) {
-        remove();
+        dismiss();
         if (mCancelOnClickListener != null) mCancelOnClickListener.onClick(v);
     }
 
@@ -108,7 +108,7 @@ public abstract class WindowPopBase implements ICommonWindowPop {
     }
 
     @Override
-    public void remove() {
+    public void dismiss() {
         if (mWindowManager != null) {
             try {
                 if (null != mView) {

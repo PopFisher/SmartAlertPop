@@ -54,11 +54,12 @@
 
             <View
                 android:id="@+id/common_dialog_btn_middle_divider"
-                style="@style/common_dialog_btn_vertical_divider_style"/>
+                style="@style/common_dialog_btn_vertical_divider_style"
+                android:visibility="visible" />
 
             <TextView
                 android:id="@+id/common_dialog_ok_btn"
-                style="@style/common_dialog_ok_small_btn_style"
+                style="@style/common_dialog_ok_small_btn_style_white_bg"
                 tools:text="确定" />
         </LinearLayout>
     </LinearLayout>
