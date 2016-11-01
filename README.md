@@ -14,3 +14,41 @@
   4. 改动点多，工作量大，风险大
   
 &nbsp;&nbsp;&nbsp;&nbsp;项目重构就要把所有弹窗重新管理起来，方便维护和拓展，具体设计与实现细节见博客，下面是弹窗的样式：
+
+## 动画演示
+
+![动画演示](/docpic/example.GIF "app操作演示")
+
+## 弹窗样式截图
+
+### 首页
+
+![homepage1](/docpic/homepage1.png "首页1") ![homepage2](/docpic/homepage2.png "首页2")
+
+### 对话框弹窗类型
+
+![type1](/docpic/type1.png "type1") ![type2](/docpic/type2.png "type2") 
+
+![type3](/docpic/type3.png "type3") ![type4](/docpic/type4.png "type4")
+
+![type101](/docpic/type101.png "type101") ![type103](/docpic/type103.png "type103")
+
+![type106](/docpic/type106.png "type106")
+
+![type102](/docpic/type102.png "type102")  ![type104](/docpic/type104.png "type104")
+
+![type105](/docpic/type105.png "type105") 
+
+![type201](/docpic/type201.png "type201") 
+
+![type202](/docpic/type202.png "type202") ![type203](/docpic/type203.png "type203")  
+
+### WindowManager弹窗类型
+
+![windowtype1](/docpic/windowtype1.png "windowtype1")  
+
+![windowtype2](/docpic/windowtype2.png "windowtype2") 
+
+## 使用说明
+
+&nbsp;&nbsp;&nbsp;&nbsp;在自己的项目中导入CommonAlertPop Module，参考本案例中的使用方法即可。 本项目只是提供一种基本的框架，具体的对话框样式可以根据自身项目的需求而改变，可以随意添加删除修改一种类型，主要是为了统一管理项目中的弹窗，方便维护与管理。
