@@ -53,6 +53,12 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;在自己的项目中导入CommonAlertPop Module，参考本案例中的使用方法即可，如下：
 
+**Dialog弹窗Type定义**
+
+![types](/docpic/types.png "DialogType定义") 
+
+**Dialog弹窗使用**
+
 	final ICommonDialog dialog = CommonDialogFactory.createDialogByType(this, DialogUtil.DIALOG_TYPE_1);
 	dialog.setTitleText("DIALOG_TYPE_1");
 	dialog.setCancelBtn(R.string.cancel, new View.OnClickListener() {
@@ -70,6 +76,30 @@
 	dialog.setCanceledOnTouchOutside(true);
 	dialog.show();
 
+**WindowManager弹窗Type定义**
+
+![windowtypes](/docpic/windowtypes.png "WindowManager弹窗类型定义") 
+
+**WindowManager弹窗使用**
+
+	final ICommonWindowPop windowPop = CommonWindowPopFactory.createWindowPopByType(this, WindowPopUtil.WINDOW_POP_TYPE_2);
+	windowPop.setTitleBgType(WindowPopUtil.TITLE_SAFE_BLUE);
+	windowPop.setTitleText("WINDOW_POP_TYPE_2");
+	windowPop.setContentView(R.layout.dialog_custom_content_test_layout);
+	windowPop.setCanceledOnTouchOutside(true);
+	windowPop.setCancelBtn(R.string.cancel, new View.OnClickListener() {
+	    @Override
+	    public void onClick(View v) {
+	
+	    }
+	});
+	windowPop.setOkBtn(R.string.ok, new View.OnClickListener() {
+	    @Override
+	    public void onClick(View v) {
+	        windowPop.dismiss();
+	    }
+	});
+	windowPop.show();
 
 &nbsp;&nbsp;&nbsp;&nbsp;具体实现细节参考博文地址：[Android重构与设计之路，从整理提示对话框弹窗开始 ](http://www.cnblogs.com/popfisher/p/6028613.html "Android重构与设计之路，从整理提示对话框弹窗开始")
 
