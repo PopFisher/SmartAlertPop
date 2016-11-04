@@ -51,4 +51,27 @@
 
 ## 使用说明
 
-&nbsp;&nbsp;&nbsp;&nbsp;在自己的项目中导入CommonAlertPop Module，参考本案例中的使用方法即可。 本项目只是提供一种基本的框架，具体的对话框样式可以根据自身项目的需求而改变，可以随意添加删除修改一种类型，主要是为了统一管理项目中的弹窗，方便维护与管理。
+&nbsp;&nbsp;&nbsp;&nbsp;在自己的项目中导入CommonAlertPop Module，参考本案例中的使用方法即可，如下：
+
+	final ICommonDialog dialog = CommonDialogFactory.createDialogByType(this, DialogUtil.DIALOG_TYPE_1);
+	dialog.setTitleText("DIALOG_TYPE_1");
+	dialog.setCancelBtn(R.string.cancel, new View.OnClickListener() {
+		@Override
+		public void onClick(View v) {
+	
+		}
+	});
+	dialog.setOkBtn(R.string.ok, new View.OnClickListener() {
+		@Override
+		public void onClick(View v) {
+			dialog.dismiss();
+		}
+	});
+	dialog.setCanceledOnTouchOutside(true);
+	dialog.show();
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;具体实现细节参考博文地址：[Android重构与设计之路，从整理提示对话框弹窗开始 ](http://www.cnblogs.com/popfisher/p/6028613.html "Android重构与设计之路，从整理提示对话框弹窗开始")
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;本项目只是提供一种基本的框架，具体的对话框样式可以根据自身项目的需求而改变，可以随意添加删除修改一种类型，主要是为了统一管理项目中的弹窗，方便维护与管理。
